@@ -1,0 +1,85 @@
+body{
+        margin: 0;
+        padding: 0;
+        background-color: #1e1d1d;
+}
+#search {
+        width: 740px;
+        height: 42px;
+        border: none;
+        border-radius: 21px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+}
+.control{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -70px;
+        row-gap: 30px;
+}
+.ilktxt{
+        color: white;
+        font-size: 32px;
+        font-family: 'Martian Mono', cursive;
+        margin-bottom: 20px;
+        margin: 0;
+}
+#start{
+        border: none;
+        background-color: rgb(213, 103, 244);   
+        padding: 10px 20px;
+        border-radius: 21px;
+        color: white;
+        font-family: 'Martian Mono', cursive;
+        font-size: 18px;
+}
+#start:hover {
+        cursor : pointer;
+        background-color: #d514db;
+       
+}
+.main{
+        display: none;
+        width: 100%;
+        height: 100vh;
+}
+.tutucu{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+ 
+}
+.anatutucu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+}
+.karakter{
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 12px;
+}
+.karaktertxt{
+        color: white;
+        font-family: 'Martian Mono', cursive;
+        width: 150px;
+}

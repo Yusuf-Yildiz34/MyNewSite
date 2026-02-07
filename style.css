@@ -1,0 +1,110 @@
+body{
+        padding: 0;
+        margin: 0;
+        background-color: #1e1d1d;
+        font-family: Arial, sans-serif;
+}
+header{
+        margin : 0;
+        padding : 0;
+        width: 100%;
+        height: auto;
+        background-color: #2c2b2b;
+}
+#logo{
+        width: auto;    
+        height: 140px;
+}
+.butonlar{
+        border: none;
+        background-color: rgb(213, 103, 244);
+        color: white;
+        border-radius: 36px;
+        width: 160px;
+        height: 32px;
+}
+.butonlar:hover{
+        background-color: #d514db;
+        cursor : pointer;
+}
+.container{
+       position: relative;
+       width: 100%;
+       height: auto;
+       display : flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       column-gap: 20px;
+}
+
+     
+#search{
+        width: 240px;
+        height: 32px;
+        border: none;
+        border-radius: 16px;
+        background-color: white;
+        align-items: center;
+        padding-left: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+}
+#language{
+        border: none;
+        background-color: rgb(213, 103, 244);
+        color: white;
+        border-radius: 36px;
+        width: 150px;
+        height: 32px;
+        padding-left: 10px;
+}
+main{
+        color:#ffffff;
+        margin-bottom: 20px;
+}
+.flexcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 100px;
+}
+
+.gcont{
+        background-color: rgb(213, 103, 244);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        padding-bottom: 0px;
+        margin-top: 40px;
+        border-radius: 16px;
+
+        
+}
+#zulf{
+        width: 420px;
+        height: 250px;
+}
+.gcont:hover{
+        cursor : pointer;
+        transform: scale(1.05);
+}
+
+#originals{
+        width: 420px;
+        height: 250px;
+}
+.mainflexcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 100px;
+        font-family : 'Martian Mono', cursive;
+        font-weight: bold;
+}

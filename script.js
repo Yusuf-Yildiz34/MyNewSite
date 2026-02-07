@@ -30,7 +30,7 @@ let ilktxtEl = document.querySelector('.ilktxt');
 if (ilktxtEl && testType === "kurtlar") {
         ilktxtEl.innerText = ilktxtEl.innerText.replace(
                 /originals\s*characters/gi,
-                "Kurtlar Vadisi"
+                "selam kizlar"
         );
 }
 

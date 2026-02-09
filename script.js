@@ -30,8 +30,9 @@ let ilktxtEl = document.querySelector('.ilktxt');
 if (ilktxtEl && testType === "kurtlar") {
         ilktxtEl.innerText = ilktxtEl.innerText.replace(
                 /originals\s*characters/gi,
-                "selam kizlar"
+                "Kurtlar Vadisi"
         );
+        localStorage.removeItem("testType");
 }
 
 if (ilktxtEl && testType === "ADC") {
@@ -79,3 +80,52 @@ if (iki) {
         });
 
 }
+const input = document.getElementById("search");
+const property = document.getElementById("property");
+
+input.addEventListener("input", () => {
+        property.textContent = input.value;
+});
+const names = [
+        "Amca", "Aurora", "Aya", "Babag", "Zenci Finn", "Cemile", "Caroline",
+        "Rebekah", "Dahlia", "Damon", "Davina", "Diego", "Elena", "Esther",
+        "Finn", "Freya", "Josh", "Hayley", "Jackson", "Kol", "Lucien", "Marcel",
+        "Mason", "Mikael", "Bonnie", "Niklauss", "Sırret Kadın", "Sage",
+        "Alaric Saltzman", "Stephan", "Tristan", "Tyler"
+];
+
+const chars = [];
+for (let i = 1; i <= 32; i++) {
+        chars.push({
+                img: i + ".jpg",
+                name: names[i - 1]
+        });
+}
+
+const imgEl = document.querySelector("#img1");
+const imgEl2 = document.querySelector("#img2");
+const img3 = document.querySelector("#img3");
+const nameEl1 = document.querySelector("#name1");
+const nameEl2 = document.querySelector("#name2");
+const tutucular = document.querySelectorAll('.tutucu');
+const resultEl = document.querySelector('.sonuc');
+
+const pool = [...chars];
+
+function random() {
+        if (pool.length < 2){
+                tutucular.forEach(tutucu => {
+                        tutucu.style.display = 'none';
+
+                });
+                 return null;
+        }
+        const index1 = Math.floor(Math.random() * pool.length);
+        const char1 = pool.splice(index1, 1)[0];
+
+        const index2 = Math.floor(Math.random() * pool.length);
+        const char2 = pool.splice(index2, 1)[0];
+
+        return { char1, char2 };
+}
+

@@ -32,6 +32,8 @@ body{
         font-family: 'Martian Mono', cursive;
         margin-bottom: 20px;
         margin: 0;
+        width: 70%;
+        text-align: center;    
 }
 #start{
         border: none;
@@ -51,35 +53,69 @@ body{
         display: none;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
 }
 .tutucu{
-        width: auto;
-        height: auto;
+        margin: 20px;
+        margin-top: 90px;
+        background-color: aliceblue;
+        width: 670px ;
+        height: 446px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 30px;
- 
+        row-gap: 8px;
+        border: none;
+        border-radius: 32px;
+        background-color :rgb(213, 103, 244);
+}
+.tutucu:hover{
+        cursor : pointer;
+        transform: scale(1.02);
 }
 .anatutucu{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        column-gap: 50px;
+        column-gap: 10px;
+        flex-wrap: wrap;
 }
 .karakter{
-        width: 600px;
-        height: 400px;
+        width: 80%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         row-gap: 12px;
+        border: none;
+        border-radius:32px;
 }
 .karaktertxt{
         color: white;
         font-family: 'Martian Mono', cursive;
         width: 150px;
 }
+#property{
+        color: white;
+        font-family: 'Martian Mono', cursive;
+        width: 150px;
+}
+#yazi{
+        color: white;
+        font-family: 'Martian Mono', cursive;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 35px;
+        margin-bottom : 0;  
+}
+.sonuc{
+        display: none;
+        width: 80%;
+        overflow: hidden;
+        background-color: #1e1d1d;
+}
+

@@ -102,7 +102,7 @@ for (let i = 1; i <= 32; i++) {
         });
 }
 
-// HTML Elementlerini Seç
+
 const imgEl = document.querySelector("#img1");
 const imgEl2 = document.querySelector("#img2");
 const img3 = document.querySelector("#img3");
@@ -114,73 +114,71 @@ const resultsoz = document.querySelector('#result');
 const tutucu1 = document.getElementById('tutucu1');
 const tutucu2 = document.getElementById('tutucu2');
 
-// Değişkenler
+
 let char1, char2;
 const pool = [...chars];
 
-// Rastgele Karakter Getirme Fonksiyonu
 function random() {
-        // Eğer havuzda kimse kalmadıysa işlem yapma (Hata önleyici)
         if (pool.length === 0) return;
 
-        // 1. Karakteri seç ve havuzdan sil
         const index1 = Math.floor(Math.random() * pool.length);
         char1 = pool.splice(index1, 1)[0];
 
-        // 2. Karakteri seç ve havuzdan sil
         const index2 = Math.floor(Math.random() * pool.length);
         char2 = pool.splice(index2, 1)[0];
 
-        // Ekrana Yazdır
+       
         imgEl.src = char1.img;
         nameEl1.textContent = char1.name;
         imgEl2.src = char2.img;
         nameEl2.textContent = char2.name;
 
-        // Eğer havuz bittiyse (son 2 kişi ekrandaysa) final fonksiyonunu hazırla
         if (pool.length === 0) {
                 last();
         }
 }
 
-// Son Aşama Fonksiyonu (Final Seçimi)
 function last() {
-        // Not: Buradaki listener'lar sadece son turda devreye girip sonucu belirler.
+       
 
         tutucu1.addEventListener('click', () => {
-                // Sol taraf kazandı
+             
                 resultsoz.textContent = nameEl1.textContent + " Kazandı!";
                 img3.src = imgEl.src;
                 oyunuBitir();
         });
 
         tutucu2.addEventListener('click', () => {
-                // Sağ taraf kazandı
+                
                 resultsoz.textContent = nameEl2.textContent + " Kazandı!";
                 img3.src = imgEl2.src;
                 oyunuBitir();
         });
 }
 
-// Oyunu bitirip ekranı temizleyen yardımcı fonksiyon
+
 function oyunuBitir() {
         tutucular.forEach(tutucu => {
-                tutucu.style.display = 'none'; // Seçenekleri gizle
+                tutucu.style.display = 'none';
         });
-        resultEl.style.display = 'block'; // Sonucu göster
+        resultEl.style.display = 'block';
 }
 
-// Oyunu Başlat
+
 random();
 
-// Tıklama Olayları (Genel Döngü İçin)
+
 tutucular.forEach(tutucu => {
         tutucu.addEventListener('click', () => {
-                // Eğer havuzda hala eleman varsa yeni tur getir
+               
                 if (pool.length > 0) {
                         random();
                 }
-                // Eğer havuz boşsa (pool 0), yukarıdaki 'last' fonksiyonundaki click çalışacak
-                // ve oyunu bitirecektir.
+              
         });
+});
+
+const logo = document.getElementById('logo');
+logo.addEventListener('click', () => {
+        window.location.href = 'index.html';
 });

@@ -65,7 +65,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 8px;
+        row-gap: 12px;
         border: none;
         border-radius: 32px;
         background-color :rgb(213, 103, 244);
@@ -83,7 +83,7 @@ body{
         flex-wrap: wrap;
 }
 .karakter{
-        width: 90%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -118,5 +118,8 @@ body{
         width: 80%;
         overflow: hidden;
         background-color: #1e1d1d;
+}
+#logo{
+        cursor: pointer;
 }
 

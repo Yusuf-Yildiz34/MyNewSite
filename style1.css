@@ -59,8 +59,8 @@ body{
         margin: 20px;
         margin-top: 90px;
         background-color: aliceblue;
-        width: 670px ;
-        height: 446px;
+        width: 720px ;
+        height: 490px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,8 +83,7 @@ body{
         flex-wrap: wrap;
 }
 .karakter{
-        width: 80%;
-        height: 70%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -92,6 +91,8 @@ body{
         row-gap: 12px;
         border: none;
         border-radius:32px;
+        aspect-ratio:3 / 2;
+        object-fit: cover;
 }
 .karaktertxt{
         color: white;

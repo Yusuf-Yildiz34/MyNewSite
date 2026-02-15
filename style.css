@@ -108,3 +108,6 @@ main{
         font-family : 'Martian Mono', cursive;
         font-weight: bold;
 }
+#logo {
+        cursor: pointer;
+}

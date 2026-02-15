@@ -119,7 +119,22 @@ body{
         overflow: hidden;
         background-color: #1e1d1d;
 }
-#logo{
-        cursor: pointer;
+.next{
+        color: white;
+        font-family: 'Martian Mono', cursive;
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        margin-top: 290px;
+        opacity : 0;
+        transition : opacity 0.8 ease;
+        pointer-events: none;
 }
+.next.show {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+        transition : opacity 0.2s ease-out;
+}
+
 
